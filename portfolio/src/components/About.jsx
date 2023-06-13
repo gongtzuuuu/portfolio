@@ -55,7 +55,7 @@ function About() {
           </div>
         </div>
         <NavLink className="light-button" to="#about" smooth>
-          My Portfolio
+          Checkout my portfolio
         </NavLink>
       </div>
 

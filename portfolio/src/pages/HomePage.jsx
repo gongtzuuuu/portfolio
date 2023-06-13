@@ -3,10 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 import "../App.css";
 import Banner from "../components/Banner";
 import About from "../components/About";
+import BackToTopButton from "../components/BackToTopButton";
 
 function HomePage() {
   return (
     <div className="homepage">
+      <BackToTopButton />
       <Banner />
       <About />
       <div className="medium-link">
