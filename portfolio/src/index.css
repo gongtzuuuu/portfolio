@@ -1,0 +1,150 @@
+/*
+STANDARD COLOR
+## yellow #937829
+## black #000000
+## white #f6f6f8
+
+*/
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #242424;
+  background-color: #e4e4e4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  width: 100%;
+}
+
+a {
+  font-weight: 300;
+  color: #f6f6f8;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #937829;
+}
+
+.dark-button {
+  width: fit-content;
+  margin: 20px 0;
+  color: #f6f6f8;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: #f6f6f8 0.7px solid;
+  border-radius: 100px;
+  transition-duration: 0.5s;
+}
+
+.dark-button:hover {
+  color: #000;
+  background-color: #937829;
+  padding: 10px 20px;
+  border: #937829 0.7px solid;
+  border-radius: 100px;
+}
+
+.light-button {
+  width: fit-content;
+  margin: 20px;
+  color: #937829;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: #937829 0.7px solid;
+  border-radius: 100px;
+  transition-duration: 0.5s;
+}
+
+.light-button:hover {
+  color: #f6f6f8;
+  background-color: #937829;
+  padding: 10px 20px;
+  border: #937829 0.7px solid;
+  border-radius: 100px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h3,
+h5 {
+  font-weight: 300;
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* --- Scrollbars --- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f6f6f8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #937829;
+}
+
+/* Selection effect */
+::-moz-selection {
+  color: aliceblue;
+  background: #937829;
+}
+
+::selection {
+  color: aliceblue;
+  background: #937829;
+}
+
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+*/
