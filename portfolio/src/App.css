@@ -82,6 +82,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1280px) {
+  .banner-heroimage {
+    max-width: 500px;
+  }
+}
+
 .banner-text {
   position: absolute;
   top: 30%;
@@ -134,6 +140,13 @@
 /* ------------- */
 /* --- ABOUT --- */
 /* ------------- */
+
+#about {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+}
+
 .about {
   position: relative;
   display: flex;
@@ -191,7 +204,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 400px;
+  width: 400px;
   overflow: hidden;
 }
 
@@ -199,94 +212,105 @@
   width: 100%;
 }
 
-/* --- HOMEPAGE: Medium --- */
-.medium-link {
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 1280px) {
+  #about {
+    height: 100vh;
+  }
+
+  .about-profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-backgroundimage {
+    width: 300px;
+  }
 }
 
-.medium-img {
-  position: relative;
-  height: 30vh;
+/* --------------- */
+/* --- Marquee --- */
+/* --------------- */
+.marquee {
+  width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
   overflow: hidden;
+  /*border: solid #000;
+  border-width: 3px 0;*/
+  padding: 20px 0;
+  background-color: #937829;
 }
 
-.medium-img img {
-  width: 80vw;
-  transition-duration: 3s;
-}
-
-.medium-img img:hover {
-  transform: scale(1.1);
-}
-
-.medium-text {
-  position: absolute;
-  top: 50%;
-  left: 45%;
+.marquee span {
+  font-size: 7rem;
+  font-weight: 100;
   color: #f6f6f8;
-  z-index: 1;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee-animation 100s linear infinite;
 }
 
-/* ------------- */
-/* --- ABOUT --- */
-/* ------------- */
+.marquee span:hover {
+  animation-play-state: paused;
+}
 
-#about {
-  position: relative;
-  width: 100vw;
-  height: 95vh;
+@keyframes marquee-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
 
 /* -------------- */
 /* --- FOOTER --- */
 /* -------------- */
 .footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 30vh;
+  height: 80vh;
   padding: 2rem;
-  background-color: #000;
+  background-image: url(https://images.unsplash.com/photo-1578165695722-7ddca71631f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+  background-size: 100%;
+  background-attachment: cover;
+  background-position: center;
   color: #f6f6f8;
 }
 
-.social {
+.footer-container {
+  width: 100vw;
+  height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  border-right: white 1px solid;
 }
 
-.social-img {
-  width: 80px;
-  height: 80px;
-  margin-right: 1rem;
-  border-radius: 100%;
-  overflow: hidden;
-}
-
-.social-img img {
-  height: 120%;
-}
-
-.social-text {
+.footer-decoration {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
   text-align: left;
-  line-height: 0;
 }
 
-.social-text p {
-  margin: 0;
-  margin-bottom: 5px;
+.footer-contact-form {
+  width: 50%;
 }
 
-.social-text h5 {
-  margin: 0;
+#form-email::placeholder-shown {
+  color: #ab34c5;
 }
 
 .copyright {
+  position: absolute;
+  bottom: 5%;
   font-size: 0.7rem;
 }
