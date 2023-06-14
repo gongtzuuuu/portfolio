@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap";
+import { Button, InputGroup } from "react-bootstrap";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 
@@ -18,21 +18,19 @@ function Footer() {
             radio input versions.
           </p>
           <Form>
-            <FloatingLabel
-              controlId="floatingInput"
-              label="Email address"
-              className="mb-3"
-            >
-              <Form.Control type="email" placeholder="name@example.com" />
-            </FloatingLabel>
-            <FloatingLabel controlId="floatingTextarea2" label="Comments">
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Control type="email" placeholder="Email" />
+            </Form.Group>
+            <InputGroup>
               <Form.Control
                 as="textarea"
-                placeholder="Leave a comment here"
-                style={{ height: "100px" }}
+                placeholder="Comments"
+                aria-label="With textarea"
               />
-            </FloatingLabel>
-            <Button className="dark-button">Submit</Button>
+            </InputGroup>
+            <Button className="dark-button" variant="primary">
+              Submit
+            </Button>
           </Form>
         </div>
         <div></div>

@@ -1,5 +1,5 @@
-import { Button } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+//import { Button } from "react-bootstrap";
+//import { Link, NavLink } from "react-router-dom";
 import "../App.css";
 import BackToTopButton from "../components/BackToTopButton";
 import Banner from "../components/Banner";
@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 function HomePage() {
   return (
-    <div className="homepage">
+    <section id="homepage">
       <BackToTopButton />
       <Banner />
       <About />
@@ -20,7 +20,7 @@ function HomePage() {
         </span>
       </div>
       <Footer />
-    </div>
+    </section>
   );
 }
 
