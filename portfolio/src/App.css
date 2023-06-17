@@ -376,21 +376,64 @@
   flex-direction: column;
   align-items: center;
   background-color: #000;
-  background-image: url(https://images.unsplash.com/photo-1617409019085-17a91ca6fd86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  /*background-image: url(https://images.unsplash.com/photo-1617409019085-17a91ca6fd86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
   background-size: 100%;
   background-position: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 
+/* ------------------------ */
+/* --- PORTFOLIO BANNER --- */
+/* ------------------------ */
+
+.portfolio-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: #000;
+}
+
+.portfolio-banner h3 {
+  color: #f6f6f8;
+}
+
+.portfolio-banner-img {
+  height: 100px;
+}
+
+.portfolio-banner-img img {
+  height: 100%;
+}
+
+/* --------------------- */
+/* --- PORTFOLIO NAV --- */
+/* --------------------- */
+
+.portfolio-nav {
+  width: 100vh;
+  position: fixed;
+  top: 100vh;
+  left: 5px;
+  display: flex;
+  transform: rotate(270deg);
+}
+
+/* -------------------------- */
+/* --- PORTFOLIO PROJECTS --- */
+/* -------------------------- */
+
 .container {
-  width: 100vw;
   min-height: fit-content;
   background-color: #f6f6f8;
 }
 
 .project {
+  width: 80%;
   padding: 40px;
-  margin: 30px 0;
+  margin-bottom: 30px;
   border: #937829 1px solid;
   border-radius: 20px;
   text-align: left;

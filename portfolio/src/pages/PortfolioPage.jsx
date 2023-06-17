@@ -1,17 +1,19 @@
-import { NavLink } from "react-router-dom";
 import BackToTopButton from "../components/BackToTopButton";
+import PortfolioBanner from "../components/PortfolioBanner";
+import PortfolioNav from "../components/PortfolioNav";
 import Project from "../components/Project";
+
+// import data
+import projects from "../data/data.json";
 
 function PortfolioPage() {
   return (
     <>
       <section id="portfoliopage">
         <BackToTopButton />
-        <NavLink className="dark-button" to="/">
-          Back to HOME
-        </NavLink>
-        <h1 style={{ color: "white" }}>PortfolioPage</h1>
-        <Project />
+        {/* <PortfolioNav /> */}
+        <PortfolioBanner />
+        <Project projects={projects} />;
       </section>
     </>
   );

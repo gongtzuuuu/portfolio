@@ -1,37 +1,28 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const squareVariants = {
+  visible: { opacity: 1, scale: 4, transition: { duration: 1 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 function Scroll() {
-  function useHorizontalScroll() {
-    const elRef = useRef();
-    useEffect(() => {
-      const el = elRef.current;
-      if (el) {
-        const onWheel = (e) => {
-          if (e.deltaY == 0) return;
-          e.preventDefault();
-          el.scrollTo({
-            left: el.scrollLeft + e.deltaY,
-            behavior: "smooth",
-          });
-        };
-        el.addEventListener("wheel", onWheel);
-        return () => el.removeEventListener("wheel", onWheel);
-      }
-    }, []);
-    return elRef;
-  }
-
-  const scrollRef = useHorizontalScroll();
-
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <>
-      <div ref={scrollRef} style={{ width: 300, overflow: "auto" }}>
-        <div style={{ whiteSpace: "nowrap" }}>
-          I will definitely overflow due to the small width of my parent
-          container
-        </div>
-      </div>
-    </>
+    <motion.div
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={squareVariants}
+      className="square"
+    ></motion.div>
   );
 }
 
