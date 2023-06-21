@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import profileImage from "../assets/profile-pic.jpg";
+import TextEffect from "./TextEffect";
 
 function About() {
   return (
@@ -10,13 +11,17 @@ function About() {
             <img src={profileImage}></img>
           </div>
           <div className="about-profile-text">
-            <p>ABOUT</p>
-            <h5>
-              I am passionate about everything that has to do with Digital
-              Design and Art Direction. I enjoy working with agencies and
-              enthusiastic people who want to solve problems through beautiful
-              designs and experiences.
-            </h5>
+            <TextEffect>
+              <p>ABOUT</p>
+            </TextEffect>
+            <TextEffect>
+              <h5>
+                I am passionate about everything that has to do with Digital
+                Design and Art Direction. I enjoy working with agencies and
+                enthusiastic people who want to solve problems through beautiful
+                designs and experiences.
+              </h5>
+            </TextEffect>
           </div>
         </div>
         <div className="about-bio">
