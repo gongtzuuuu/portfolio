@@ -66,7 +66,7 @@
 /* -------------- */
 .banner {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #000;
 }
@@ -143,7 +143,7 @@
 
 #about {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 90vh;
 }
 
@@ -224,6 +224,34 @@
 
   .about-backgroundimage {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #about {
+    width: 100%;
+  }
+  .about-container {
+    top: 5%;
+    left: 5%;
+  }
+
+  .about-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-profile-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .about-bio {
+    padding: 0;
+  }
+
+  .about-backgroundimage {
+    width: 200px;
   }
 }
 
@@ -376,10 +404,6 @@
   flex-direction: column;
   align-items: center;
   background-color: #000;
-  /*background-image: url(https://images.unsplash.com/photo-1617409019085-17a91ca6fd86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
-  background-size: 100%;
-  background-position: cover;
-  background-attachment: fixed;*/
 }
 
 /* ------------------------ */
@@ -413,10 +437,9 @@
 /* --------------------- */
 
 .portfolio-nav {
-  width: 100vh;
   position: fixed;
-  top: 100vh;
   left: 5px;
+  bottom: 15%;
   display: flex;
   transform: rotate(270deg);
 }
