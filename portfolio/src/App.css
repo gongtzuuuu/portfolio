@@ -466,6 +466,19 @@
   margin: 0;
 }
 
+.project-title {
+  color: #937829;
+  font-weight: 500;
+}
+
+.project-link {
+  height: 1.2rem;
+}
+
+.project-link img {
+  height: 100%;
+}
+
 .project-img {
   overflow: hidden;
 }
@@ -476,6 +489,6 @@
 }
 
 .project-icon {
-  width: 20px;
-  margin-left: 20px;
+  width: 15px;
+  margin-left: 10px;
 }
