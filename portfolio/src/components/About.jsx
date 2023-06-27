@@ -16,52 +16,51 @@ function About() {
             </TextEffect>
             <TextEffect>
               <h5>
-                I am passionate about everything that has to do with Digital
-                Design and Art Direction. I enjoy working with agencies and
-                enthusiastic people who want to solve problems through beautiful
-                designs and experiences.
+                Hello, I am TZU. I am a highly motivated web developer who is
+                committed to good working knowledge and the ability to learn new
+                technology quickly, with a background in project management that
+                possesses a high degree of problem-solving and teamwork skills.
               </h5>
             </TextEffect>
           </div>
         </div>
         <div className="about-bio">
-          <div
-            className="about-bio-text"
-            style={{ borderRight: "1px solid #937829" }}
-          >
-            <p>
+          <div className="about-bio-text">
+            <p className="job-title">
               WEB DEVELOPER<br></br>2022-2023
             </p>
-            <p>
-              I am passionate about everything that has to do with Digital
-              Design and Art Direction.
-            </p>
-          </div>
-          <div
-            className="about-bio-text"
-            style={{ borderRight: "1px solid #937829" }}
-          >
-            <p>
-              PROJECT MANAGER<br></br>2018-2023
-            </p>
-            <p>
+            <p className="job-description">
               I am passionate about everything that has to do with Digital
               Design and Art Direction.
             </p>
           </div>
           <div className="about-bio-text">
-            <p>
+            <p className="job-title">
+              PROJECT MANAGER<br></br>2018-2023
+            </p>
+            <p className="job-description">
+              I am passionate about everything that has to do with Digital
+              Design and Art Direction.
+            </p>
+          </div>
+          <div className="about-bio-text">
+            <p className="job-title">
               ART CREATOR<br></br>2019-2020
             </p>
-            <p>
+            <p className="job-description">
               I am passionate about everything that has to do with Digital
               Design and Art Direction.
             </p>
           </div>
         </div>
-        <NavLink className="light-button" to="/portfolio" smooth>
-          My portfolio
-        </NavLink>
+        <div className="about-button">
+          <NavLink className="light-button" to="/portfolio" smooth>
+            See my portfolio
+          </NavLink>
+          <NavLink className="light-button" to="/portfolio" smooth>
+            Download my CV
+          </NavLink>
+        </div>
       </div>
 
       <div className="about-backgroundimage">

@@ -82,17 +82,12 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1280px) {
-  .banner-heroimage {
-    max-width: 500px;
-  }
-}
-
 .banner-text {
+  max-width: 300px;
   position: absolute;
   top: 30%;
   right: 20%;
-  max-width: 300px;
+
   text-align: left;
 }
 
@@ -102,6 +97,7 @@
 
 .banner-text p {
   color: #f6f6f8;
+  margin-bottom: 3rem;
 }
 
 .banner-header {
@@ -137,6 +133,25 @@
   display: flex;
 }
 
+@media screen and (max-width: 900px) {
+  .banner-heroimage {
+    max-width: 550px;
+  }
+  .banner-text {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner-text {
+    left: 20px;
+  }
+
+  .banner-decoration {
+    flex-direction: column;
+  }
+}
+
 /* ------------- */
 /* --- ABOUT --- */
 /* ------------- */
@@ -157,6 +172,7 @@
 
 .about-container {
   max-width: 800px;
+  padding-right: 20px;
   position: absolute;
   top: 15%;
   left: 15%;
@@ -173,8 +189,8 @@
 }
 
 .about-profile-img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
   border: #937829 1px solid;
   overflow: hidden;
@@ -189,15 +205,28 @@
   max-width: 600px;
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 .about-bio {
   display: flex;
   padding: 20px;
+  margin-bottom: 3rem;
+  background-color: rgba(246, 246, 248, 0.3);
 }
 
 .about-bio-text {
-  margin: 10px;
+  margin: 0px;
+  padding: 20px;
+  border-right: 1px solid #937829;
+}
+
+.about-bio-text:nth-child(3) {
+  border-right: none;
+}
+
+.job-title {
+  width: 100px;
 }
 
 .about-backgroundimage {
@@ -213,32 +242,33 @@
 }
 
 @media screen and (max-width: 1280px) {
-  #about {
-    height: 100vh;
-  }
-
-  .about-profile-img {
-    width: 100px;
-    height: 100px;
-  }
-
   .about-backgroundimage {
-    width: 300px;
+    width: 350px;
+  }
+
+  .about-container {
+    top: 10%;
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .about-bio {
+    padding-top: 0;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 900px) {
   #about {
     width: 100%;
-  }
-  .about-container {
-    top: 5%;
-    left: 5%;
+    min-height: 100vh;
   }
 
   .about-profile {
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
   }
 
   .about-profile-img {
@@ -248,10 +278,66 @@
 
   .about-bio {
     padding: 0;
+    flex-direction: column;
+  }
+
+  .about-bio-text {
+    border: none;
+    display: flex;
+  }
+
+  .about-bio-text p:nth-child(2) {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: #937829 1px solid;
   }
 
   .about-backgroundimage {
-    width: 200px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-container {
+    top: 3%;
+    left: 3%;
+  }
+
+  .about-profile-img {
+    margin: 10px 5px;
+  }
+
+  .about-bio {
+    margin: 15px 0;
+  }
+
+  .about-profile-text {
+    padding: 10px 5px;
+  }
+
+  .about-profile-text h5 {
+    font-size: 1rem;
+  }
+
+  .about-bio-text {
+    padding: 10px 5px;
+  }
+
+  .job-title {
+    margin: 0;
+  }
+
+  .job-description {
+    margin: 0;
+  }
+
+  .about-button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-button a {
+    margin: 5px 0;
   }
 }
 
@@ -263,8 +349,6 @@
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
-  /*border: solid #000;
-  border-width: 3px 0;*/
   padding: 20px 0;
   background-color: #937829;
 }
@@ -387,7 +471,7 @@
 }
 
 .footer-contact-form {
-  width: 50%;
+  width: 70%;
 }
 
 .copyright {
@@ -453,6 +537,10 @@
   background-color: #f6f6f8;
 }
 
+/* ---------------- */
+/* --- PROJECTS --- */
+/* ---------------- */
+
 .project {
   width: 80%;
   padding: 40px;
@@ -486,9 +574,41 @@
 .project-img img {
   width: 100%;
   object-fit: cover;
+  transform: scale(1.5);
+  transition-duration: 10s;
 }
 
 .project-icon {
   width: 15px;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+  .project {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio-banner {
+    height: 30vh;
+  }
+
+  .project {
+    width: 90%;
+    padding: 30px 25px;
+  }
+  .project-img {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .project {
+    padding: 20px 15px;
+  }
+
+  .project-icon {
+    margin-left: 7px;
+  }
 }

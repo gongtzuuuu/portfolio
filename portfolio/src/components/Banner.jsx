@@ -21,14 +21,14 @@ function Banner() {
       </div>
       <div className="banner-header">
         <h5>TZU-YUN LIANG</h5>
-        <div className="banner-header-text">
+        <div className="banner-header-text hide-mobile">
           <p>
             WEB DEVELOPER
             <br />
             PORTFOLIO 2022-2023
           </p>
         </div>
-        <div className="banner-header-text">
+        <div className="banner-header-text hide-mobile">
           <p>
             ART CREATOR
             <br />
@@ -38,9 +38,6 @@ function Banner() {
       </div>
       <div className="banner-decoration">
         <div className="banner-decoration-link">
-          <NavLink to="https://codepen.io/Gongtzuuuu" target="_blank">
-            <p>CODEPEN</p>
-          </NavLink>
           <NavLink to="https://github.com/gongtzuuuu" target="_blank">
             <p>GITHUB</p>
           </NavLink>
@@ -48,7 +45,7 @@ function Banner() {
             <p>LINKEDIN</p>
           </NavLink>
         </div>
-        <div className="banner-decoration-geo">
+        <div className="banner-decoration-geo hide-mobile">
           <p>N23.7058,E120.4154</p>
         </div>
         <div className="banner-decoration-copyright">

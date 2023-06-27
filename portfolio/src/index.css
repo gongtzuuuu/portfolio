@@ -12,11 +12,12 @@
 /* ------------------------- */
 * {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1280px) {
   * {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -88,7 +89,7 @@ a:hover {
   width: fit-content;
   margin: 20px;
   color: #937829;
-  background-color: transparent;
+  background-color: #f6f6f8;
   padding: 10px 20px;
   border: #937829 0.7px solid;
   border-radius: 100px;
@@ -157,4 +158,13 @@ p {
 ::selection {
   color: aliceblue;
   background: #937829;
+}
+
+/* ---------------------- */
+/* --- Hide in mobile --- */
+/* ---------------------- */
+@media screen and (max-width: 700px) {
+  .hide-mobile {
+    display: none;
+  }
 }

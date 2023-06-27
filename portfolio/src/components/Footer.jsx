@@ -1,5 +1,4 @@
 import { Button, InputGroup } from "react-bootstrap";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 
 function Footer() {
@@ -12,10 +11,9 @@ function Footer() {
           <p></p>
         </div>
         <div className="footer-contact-form">
-          <h3>Multiple addons</h3>
+          <h3>Contact me</h3>
           <p>
-            Multiple add-ons are supported and can be mixed with checkbox and
-            radio input versions.
+            Interested in working together? Feel free to contact me at anytime!
           </p>
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
