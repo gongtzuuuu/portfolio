@@ -9,9 +9,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-// import data
-import projectsData from "../data/data.json";
-
 // import icons
 import linkIcon from "../assets/share.png";
 import htmlIcon from "../assets/icons/html5.svg";
@@ -29,8 +26,6 @@ const divVariants = {
 };
 
 function Project() {
-  console.log(projectsData);
-
   const controls = useAnimation();
   const [ref, inView] = useInView();
 

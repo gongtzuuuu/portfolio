@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom";
-import profileImage from "../assets/profile-pic.jpg";
+
+// Import components
 import TextEffect from "./TextEffect";
+
+// Import picture resource
+import profileImage from "../assets/profile-pic.jpg";
 
 function About() {
   return (
@@ -30,17 +34,19 @@ function About() {
               WEB DEVELOPER<br></br>2022-2023
             </p>
             <p className="job-description">
-              I am passionate about everything that has to do with Digital
-              Design and Art Direction.
+              Experienced Full Stack Engineer adept in JavaScript, React,
+              Node.js. Proficient in front-end and back-end development,
+              delivering robust web applications.
             </p>
           </div>
           <div className="about-bio-text">
             <p className="job-title">
-              PROJECT MANAGER<br></br>2018-2023
+              PROJECT MANAGER<br></br>2021-2023
             </p>
             <p className="job-description">
-              I am passionate about everything that has to do with Digital
-              Design and Art Direction.
+              Led diverse projects, analyzed, strategized for business goals,
+              coordinated teams, and communicated progress to upper management
+              effectively.
             </p>
           </div>
           <div className="about-bio-text">
@@ -48,8 +54,9 @@ function About() {
               ART CREATOR<br></br>2019-2020
             </p>
             <p className="job-description">
-              I am passionate about everything that has to do with Digital
-              Design and Art Direction.
+              Collaborated with artists, curators, and art spaces worldwide. Her
+              experience spans arts, publishing, and marketing, emphasizing
+              communication and interdisciplinary professionalism.
             </p>
           </div>
         </div>
