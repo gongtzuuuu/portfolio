@@ -1,20 +1,21 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./ErrorPage.css";
 
 const ErrorPage = () => {
   return (
-    <div className="d-flex align-items-center justify-content-center vh-100">
-      <div className="text-center">
-        <h1 className="display-1 fw-bold">404</h1>
+    <section id="errorpage">
+      <div className="errorpage-container">
+        <h1 className="error-title">404</h1>
         <p className="fs-3">
           {" "}
           <span className="text-danger">Oops!</span> Page not found.
         </p>
         <p className="lead">The page you’re looking for doesn’t exist.</p>
-        <Link to={"/"} className="button login__submit">
+        <NavLink to={"/"} className="dark-button">
           Go Home
-        </Link>
+        </NavLink>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,6 +4,7 @@ import "../App.css";
 import BackToTopButton from "../components/BackToTopButton";
 import Banner from "../components/Banner";
 import About from "../components/About";
+import Marquee from "../components/Marquee";
 import Footer from "../components/Footer";
 
 function HomePage() {
@@ -12,13 +13,7 @@ function HomePage() {
       <BackToTopButton />
       <Banner />
       <About />
-      <div className="marquee">
-        <span>
-          Interested in working together? Feel free to contact me at anytime!
-          Interested in working together? Feel free to contact me at anytime!
-          Interested in working together? Feel free to contact me at anytime!
-        </span>
-      </div>
+      <Marquee />
       <Footer />
     </section>
   );
