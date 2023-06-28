@@ -1,5 +1,5 @@
 //import framer motion
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";

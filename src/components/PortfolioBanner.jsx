@@ -1,4 +1,12 @@
+// Import from framer motion
+import { useState } from "react";
+import { motion } from "framer-motion";
+
 function PortfolioBanner() {
+  const [x, setX] = useState(0);
+  const [y, setY] = useState(0);
+  const [rotate, setRotate] = useState(0);
+
   return (
     <div className="portfolio-banner">
       <h3>Portfolio</h3>
