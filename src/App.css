@@ -19,7 +19,23 @@
   color: #937829;
   font-size: 25px;
   font-weight: 700;
-  z-index: 1;
+  z-index: 2;
+}
+
+@media screen and (max-width: 800px) {
+  .backToTop-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .backToTop-btn {
+    bottom: 10px;
+    right: 10px;
+  }
 }
 
 /* -------------- */
@@ -218,14 +234,11 @@
 .about-bio-text {
   margin: 0px;
   padding: 20px;
-  /*border-right: 1px solid #937829;*/
 }
 
-/* .about-bio-text:nth-child(3) {
-  border-right: none;
-} */
-
 .job-title {
+  font-weight: 400;
+  color: #937829;
   border-left: 3px solid #937829;
   padding-left: 5px;
 }
@@ -306,7 +319,7 @@
   }
 
   .job-title {
-    width: 100px;
+    width: 90px;
   }
 
   .about-backgroundimage {
@@ -321,11 +334,14 @@
   }
 
   .about-profile-img {
+    width: 50px;
+    height: 50px;
     margin: 10px 5px;
   }
 
   .about-bio {
     margin: 15px 0;
+    padding: 0;
   }
 
   .about-profile-text {
@@ -376,77 +392,6 @@
   font-size: 5rem;
   font-weight: 100;
   color: #f6f6f8;
-}
-
-/*.marquee span:hover {
-  animation-play-state: paused;
-}
-
-@keyframes marquee-animation {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
-}
-*/
-
-/* -------------- */
-/* --- Scroll --- */
-/* -------------- */
-.container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-}
-
-.space-holder {
-  position: relative;
-  width: 100%;
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.horizontal {
-  position: absolute;
-  height: 100%;
-  will-change: transform;
-}
-
-.cards {
-  position: relative;
-  height: 100%;
-  padding-left: 300px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.sample-card {
-  position: relative;
-  height: 400px;
-  width: 500px;
-  background-color: royalblue;
-  margin-right: 3rem;
-}
-
-.revealer {
-  opacity: 0;
-  transition: 0.4s opacity ease-in-out, 0.2s transform ease-in-out;
-  transform: scale(0.5);
-}
-
-.show-revealer {
-  opacity: 1;
-  transform: none;
 }
 
 /* -------------- */
@@ -537,11 +482,10 @@
 /* --------------------- */
 
 .portfolio-nav {
-  position: fixed;
-  left: 5px;
-  bottom: 15%;
-  display: flex;
-  transform: rotate(270deg);
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 1;
 }
 
 /* -------------------------- */
