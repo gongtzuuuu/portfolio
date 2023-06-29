@@ -48,18 +48,35 @@ function Project() {
           <Container className="project">
             <Row>
               <Col xs={12} md={5} className="project-text">
-                <h3 className="project-title">
-                  GluttonGlobe{" "}
-                  <span>
+                <h3 className="project-title">GluttonGlobe</h3>
+                <hr style={{ border: "#937829 0.5px solid" }}></hr>
+                <div>
+                  <NavLink
+                    className="project-link"
+                    to="https://bejewelled-alfajores-c72f6e.netlify.app/"
+                    target="_blank"
+                  >
+                    <img src={linkIcon} className="project-link-icon" />
+                    <p className="project-link-text">Deploy version</p>
+                  </NavLink>
+                  <div className="project-link">
+                    <img src={linkIcon} className="project-link-icon" />
+                    <p>Github link: </p>
                     <NavLink
-                      to="https://bejewelled-alfajores-c72f6e.netlify.app/"
+                      to="https://github.com/Panthari-Panthong/gluttonGlobe-client"
                       target="_blank"
                     >
-                      <img src={linkIcon} className="project-link"></img>
+                      <p className="project-link-text">　client repository </p>
                     </NavLink>
-                  </span>
-                </h3>
-
+                    ／
+                    <NavLink
+                      to="https://github.com/Panthari-Panthong/gluttonGlobe-server/"
+                      target="_blank"
+                    >
+                      <p className="project-link-text">server repository</p>
+                    </NavLink>
+                  </div>
+                </div>
                 <hr style={{ border: "#937829 0.5px solid" }}></hr>
                 <p>
                   GluttonGlobe is an interactive world map where users can mark
@@ -100,18 +117,26 @@ function Project() {
           <Container className="project">
             <Row>
               <Col xs={12} md={5} className="project-text">
-                <h3 className="project-title">
-                  FitQuest{" "}
-                  <span>
-                    <NavLink
-                      to="https://fitness-tracker.adaptable.app/"
-                      target="_blank"
-                    >
-                      <img src={linkIcon} className="project-link"></img>
-                    </NavLink>
-                  </span>
-                </h3>
-
+                <h3 className="project-title">FitQuest</h3>
+                <hr style={{ border: "#937829 0.5px solid" }}></hr>
+                <div>
+                  <NavLink
+                    className="project-link"
+                    to="https://fitness-tracker.adaptable.app/"
+                    target="_blank"
+                  >
+                    <img src={linkIcon} className="project-link-icon" />
+                    <p className="project-link-text">Deploy version</p>
+                  </NavLink>
+                  <NavLink
+                    className="project-link"
+                    to="https://github.com/imason5/FitQuest"
+                    target="_blank"
+                  >
+                    <img src={linkIcon} className="project-link-icon" />
+                    <p className="project-link-text">Github link</p>
+                  </NavLink>
+                </div>
                 <hr style={{ border: "#937829 0.5px solid" }}></hr>
                 <p>
                   FitQuest is a full CRUD fitness tracker app enabling users to
@@ -152,18 +177,26 @@ function Project() {
           <Container className="project">
             <Row>
               <Col xs={12} md={5} className="project-text">
-                <h3 className="project-title">
-                  Office Simulator{" "}
-                  <span>
-                    <NavLink
-                      to="https://gongtzuuuu.github.io/office-simulator/"
-                      target="_blank"
-                    >
-                      <img src={linkIcon} className="project-link"></img>
-                    </NavLink>
-                  </span>
-                </h3>
-
+                <h3 className="project-title">Office Simulator</h3>
+                <hr style={{ border: "#937829 0.5px solid" }}></hr>
+                <div>
+                  <NavLink
+                    className="project-link"
+                    to="https://gongtzuuuu.github.io/office-simulator/"
+                    target="_blank"
+                  >
+                    <img src={linkIcon} className="project-link-icon" />
+                    <p className="project-link-text">Deploy version</p>
+                  </NavLink>
+                  <NavLink
+                    className="project-link"
+                    to="https://github.com/gongtzuuuu/office-simulator"
+                    target="_blank"
+                  >
+                    <img src={linkIcon} className="project-link-icon" />
+                    <p className="project-link-text">Github link</p>
+                  </NavLink>
+                </div>
                 <hr style={{ border: "#937829 0.5px solid" }}></hr>
                 <p>
                   Developed Office Simulator, a JavaScript-based web game,

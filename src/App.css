@@ -524,11 +524,24 @@
 }
 
 .project-link {
-  height: 1.2rem;
+  display: flex;
+  align-items: center;
 }
 
-.project-link img {
+.project-link-icon {
+  height: 1rem;
+  margin-right: 5px;
+}
+
+.project-link-icon img {
   height: 100%;
+}
+.project-link-text {
+  color: #000;
+}
+
+.project-link-text:hover {
+  color: #937829;
 }
 
 .project-img {
@@ -543,7 +556,7 @@
 }
 
 .project-icon {
-  height: 15px;
+  height: 1.2rem;
   margin-left: 10px;
 }
 
