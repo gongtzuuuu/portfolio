@@ -22,9 +22,9 @@ function Banner() {
             quickly, with a background in project management that possesses a
             high degree of problem-solving and teamwork skills.
           </p>
-          <HashLink smooth className="dark-button" to="/#about">
+          {/* <HashLink smooth className="dark-button" to="/#about">
             About me
-          </HashLink>
+          </HashLink> */}
         </TextEffect>
       </div>
       <TextEffect delay={0.6}>

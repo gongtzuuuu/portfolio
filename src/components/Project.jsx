@@ -66,26 +66,30 @@ function Project() {
                       to="https://github.com/Panthari-Panthong/gluttonGlobe-client"
                       target="_blank"
                     >
-                      <p className="project-link-text">　client repository </p>
+                      <p className="project-link-text">client</p>
                     </NavLink>
                     ／
                     <NavLink
                       to="https://github.com/Panthari-Panthong/gluttonGlobe-server/"
                       target="_blank"
                     >
-                      <p className="project-link-text">server repository</p>
+                      <p className="project-link-text">server</p>
                     </NavLink>
                   </div>
                 </div>
                 <hr style={{ border: "#937829 0.5px solid" }}></hr>
                 <p>
-                  GluttonGlobe is an interactive world map where users can mark
-                  popular cities they have visited or wish to explore. By
-                  logging into the app, users can leave their own comments that
-                  are visible to others. This app enables a global community of
-                  users to discover and share travel recommendations worldwide.
-                  Developed in collaboration with partner Panthari Panthong and
-                  Solen Wanono.
+                  GluttonGlobe is an interactive global mapping platform
+                  designed to facilitate user engagement in discovering and
+                  sharing travel experiences. With a user-friendly interface,
+                  users can log into the app and conveniently mark the cities
+                  they have visited or aspire to explore on a world map.
+                  Additionally, users can leave insightful comments that are
+                  accessible to fellow users, offering a powerful feature for
+                  the global community of travel enthusiasts to exchange
+                  valuable recommendations on a worldwide scale.<br></br>
+                  The app was developed in collaboration with partners Panthari
+                  Panthong and Solen Wanono.
                 </p>
                 <hr style={{ border: "#937829 0.5px solid" }}></hr>
                 <p>
@@ -139,14 +143,16 @@ function Project() {
                 </div>
                 <hr style={{ border: "#937829 0.5px solid" }}></hr>
                 <p>
-                  FitQuest is a full CRUD fitness tracker app enabling users to
-                  create and track daily workouts. Users log exercises with
-                  sets, weights, and reps, earning points based on difficulty.
-                  Profile pages allow editing of personal details and display
-                  workout history. Styled with a mobile-first approach, it
-                  integrates API Ninjas Exercise API for exercise selection and
-                  Cloudinary API for profile picture uploads. Developed in
-                  collaboration with partner Ian Mason.
+                  FitQuest is a fitness tracker app enabling users to create and
+                  track daily workouts. By logging into the app, users can log
+                  exercises with sets, weights, and reps, also earning points
+                  based on difficulty. By integrating API Ninjas Exercise API,
+                  the app provides a variety of workout templates for users to
+                  choose from freely. On the personalised profile page, the app
+                  displays each user's workout history and allows them to make
+                  and edit personal details and change their profile pictures.
+                  <br></br>The app was developed in collaboration with partner
+                  Ian Mason.
                 </p>
                 <hr style={{ border: "#937829 0.5px solid" }}></hr>
                 <p>
@@ -199,12 +205,15 @@ function Project() {
                 </div>
                 <hr style={{ border: "#937829 0.5px solid" }}></hr>
                 <p>
-                  Developed Office Simulator, a JavaScript-based web game,
-                  responsible for implementing precise character control
-                  mechanics using the up and down arrow keys. Created an
-                  immersive user experience within a simulated office
-                  environment, where the main goal is to generate $15 in revenue
-                  within a challenging one-minute timeframe.
+                  Office Simulator is a JavaScript-Canvas-based web game
+                  inspired by classic 2D web games, combining the theme with
+                  Asian workplace culture and a touch of humor. During gameplay,
+                  players can utilize the up and down arrow keys to precisely
+                  control the character, with the main objective being to
+                  accumulate 15 dollars in revenue within a one-minute
+                  timeframe. Regardless of whether the game is won or lost,
+                  users have the option to start anew after encountering an
+                  Easter egg.
                 </p>
                 <hr style={{ border: "#937829 0.5px solid" }}></hr>
                 <p>
