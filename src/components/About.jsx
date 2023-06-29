@@ -15,10 +15,10 @@ function About() {
             <img src={profileImage}></img>
           </div>
           <div className="about-profile-text">
-            <TextEffect>
+            <TextEffect delay={0}>
               <p>ABOUT</p>
             </TextEffect>
-            <TextEffect>
+            <TextEffect delay={0.3}>
               <h5>
                 Hello, I am TZU. I am a highly motivated web developer who is
                 committed to good working knowledge and the ability to learn new
@@ -30,43 +30,57 @@ function About() {
         </div>
         <div className="about-bio">
           <div className="about-bio-text">
-            <p className="job-title">
-              WEB DEVELOPER<br></br>2022-2023
-            </p>
-            <p className="job-description">
-              Experienced Full Stack Engineer adept in JavaScript, React,
-              Node.js. Proficient in front-end and back-end development,
-              delivering robust web applications.
-            </p>
+            <TextEffect delay={0.6}>
+              <p className="job-title">
+                WEB DEVELOPER<br></br>2022-2023
+              </p>
+            </TextEffect>
+            <TextEffect delay={0.9}>
+              <p className="job-description">
+                Experienced Full Stack Engineer adept in JavaScript, React,
+                Node.js. Proficient in front-end and back-end development,
+                delivering robust web applications.
+              </p>
+            </TextEffect>
           </div>
           <div className="about-bio-text">
-            <p className="job-title">
-              PROJECT MANAGER<br></br>2021-2023
-            </p>
-            <p className="job-description">
-              Led diverse projects, analyzed, strategized for business goals,
-              coordinated teams, and communicated progress to upper management
-              effectively.
-            </p>
+            <TextEffect delay={0.6}>
+              <p className="job-title">
+                PROJECT MANAGER<br></br>2021-2023
+              </p>
+            </TextEffect>
+            <TextEffect delay={0.9}>
+              <p className="job-description">
+                Led diverse projects, analyzed, strategized for business goals,
+                coordinated teams, and communicated progress to upper management
+                effectively.
+              </p>
+            </TextEffect>
           </div>
           <div className="about-bio-text">
-            <p className="job-title">
-              ART CREATOR<br></br>2019-2020
-            </p>
-            <p className="job-description">
-              Collaborated with artists, curators, and art spaces worldwide. Her
-              experience spans arts, publishing, and marketing, emphasizing
-              communication and interdisciplinary professionalism.
-            </p>
+            <TextEffect delay={0.6}>
+              <p className="job-title">
+                ART CREATOR<br></br>2019-2020
+              </p>
+            </TextEffect>
+            <TextEffect delay={0.9}>
+              <p className="job-description">
+                Collaborated with artists, curators, and art spaces worldwide.
+                Her experience spans arts, publishing, and marketing,
+                emphasizing communication and interdisciplinary professionalism.
+              </p>
+            </TextEffect>
           </div>
         </div>
         <div className="about-button">
-          <NavLink className="light-button" to="/portfolio" smooth>
-            See my portfolio
-          </NavLink>
-          <NavLink className="light-button" to="/portfolio" smooth>
-            Download my CV
-          </NavLink>
+          <TextEffect delay={1.2}>
+            <NavLink className="light-button" to="/portfolio" smooth>
+              See my portfolio
+            </NavLink>
+            <NavLink className="light-button" to="/portfolio" smooth>
+              Download my CV
+            </NavLink>
+          </TextEffect>
         </div>
       </div>
 

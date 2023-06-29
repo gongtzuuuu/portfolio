@@ -75,7 +75,6 @@
   position: absolute;
   top: 10%;
   max-width: 600px;
-  height: calc(100vh * 0.8);
   overflow: hidden;
 }
 
@@ -219,11 +218,16 @@
 .about-bio-text {
   margin: 0px;
   padding: 20px;
-  border-right: 1px solid #937829;
+  /*border-right: 1px solid #937829;*/
 }
 
-.about-bio-text:nth-child(3) {
+/* .about-bio-text:nth-child(3) {
   border-right: none;
+} */
+
+.job-title {
+  border-left: 3px solid #937829;
+  padding-left: 5px;
 }
 
 .about-backgroundimage {
@@ -231,7 +235,6 @@
   bottom: 0;
   right: 0;
   width: 400px;
-  height: calc(100vh * 0.8);
   overflow: hidden;
 }
 
@@ -293,6 +296,7 @@
     border: none;
     display: flex;
     padding: 0;
+    animation: ease-in 10s linear infinite;
   }
 
   .about-bio-text p:nth-child(2) {
