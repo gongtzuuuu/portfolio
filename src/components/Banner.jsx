@@ -23,7 +23,7 @@ function Banner() {
             high degree of problem-solving and teamwork skills.
           </p>
           <HashLink smooth className="dark-button" to="/#about">
-            Explore more
+            About me
           </HashLink>
         </TextEffect>
       </div>

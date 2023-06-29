@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 // Import components
 import TextEffect from "./TextEffect";
@@ -74,12 +74,12 @@ function About() {
         </div>
         <div className="about-button">
           <TextEffect delay={1.2}>
-            <NavLink className="light-button" to="/portfolio" smooth>
+            <Link className="light-button" to="/portfolio" smooth>
               See my portfolio
-            </NavLink>
-            <NavLink className="light-button" to="/portfolio" smooth>
+            </Link>
+            <Link className="light-button" to="/portfolio" smooth>
               Download my CV
-            </NavLink>
+            </Link>
           </TextEffect>
         </div>
       </div>

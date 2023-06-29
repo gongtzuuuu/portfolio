@@ -5,7 +5,7 @@ import PortfolioBanner from "../components/PortfolioBanner";
 import PortfolioNav from "../components/PortfolioNav";
 import Project from "../components/Project";
 
-function PortfolioPage() {
+function PortfolioPage(props) {
   return (
     <section id="portfoliopage">
       <BackToTopButton />

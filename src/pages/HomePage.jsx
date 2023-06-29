@@ -7,7 +7,7 @@ import About from "../components/About";
 import Marquee from "../components/Marquee";
 import Footer from "../components/Footer";
 
-function HomePage() {
+function HomePage(props) {
   return (
     <section id="homepage">
       <BackToTopButton />
