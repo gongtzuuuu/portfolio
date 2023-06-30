@@ -1,4 +1,4 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // Import components
 import TextEffect from "./TextEffect";
@@ -20,10 +20,10 @@ function About() {
             </TextEffect>
             <TextEffect delay={0.3}>
               <h5>
-                Hello, I am TZU. I am a highly motivated web developer who is
-                committed to good working knowledge and the ability to learn new
-                technology quickly, with a background in project management that
-                possesses a high degree of problem-solving and teamwork skills.
+                I am a web developer based in Taipei, Taiwan, specializing in
+                crafting reliable and expandable web-based products that
+                prioritize user experiences. With expertise in web development,
+                I have successfully delivered a wide range of projects.
               </h5>
             </TextEffect>
           </div>
@@ -32,14 +32,14 @@ function About() {
           <div className="about-bio-text">
             <TextEffect delay={0.6}>
               <p className="job-title">
-                WEB DEVELOPER<br></br>2022-2023
+                WEB DEVELOPER<br></br>2022-present
               </p>
             </TextEffect>
             <TextEffect delay={0.9}>
               <p className="job-description">
-                Experienced Full Stack Engineer adept in JavaScript, React,
-                Node.js. Proficient in front-end and back-end development,
-                delivering robust web applications.
+                Excel at delivering accessible, fluid, and interactive websites,
+                having successfully collaborated with fellow developers on
+                projects.
               </p>
             </TextEffect>
           </div>
@@ -51,9 +51,8 @@ function About() {
             </TextEffect>
             <TextEffect delay={0.9}>
               <p className="job-description">
-                Led diverse projects, analyzed, strategized for business goals,
-                coordinated teams, and communicated progress to upper management
-                effectively.
+                Developed key project goals and worked collaboratively with
+                teams to achieve them in a timely and effective manner.
               </p>
             </TextEffect>
           </div>
@@ -65,21 +64,20 @@ function About() {
             </TextEffect>
             <TextEffect delay={0.9}>
               <p className="job-description">
-                Collaborated with artists, curators, and art spaces worldwide.
-                Her experience spans arts, publishing, and marketing,
-                emphasizing communication and interdisciplinary professionalism.
+                Explored diverse mediums such as photography, performance, and
+                literature, placing interdisciplinary professionalism.
               </p>
             </TextEffect>
           </div>
         </div>
         <div className="about-button">
-          <TextEffect delay={1.2}>
-            <Link className="light-button" to="/portfolio" smooth>
+          <TextEffect delay={1.1}>
+            <NavLink className="light-button" to="/portfolio">
               See my portfolio
-            </Link>
-            <Link className="light-button" to="/portfolio" smooth>
+            </NavLink>
+            <NavLink className="light-button" to="/portfolio">
               Download my CV
-            </Link>
+            </NavLink>
           </TextEffect>
         </div>
       </div>

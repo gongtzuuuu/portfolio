@@ -43,7 +43,7 @@ function Project() {
       {/* ------------------- */}
       {/* --- Project (1) --- */}
       {/* ------------------- */}
-      <TextEffect delay={0}>
+      <TextEffect delay={0.3}>
         <div className="project-container">
           <Container className="project">
             <Row>
@@ -101,12 +101,19 @@ function Project() {
                     <img src={reactIcon} className="project-icon"></img>
                     <img src={nodejsIcon} className="project-icon"></img>
                     <img src={dbIcon} className="project-icon"></img>
-                    {/* <img src={gitIcon} className="project-icon"></img> */}
                   </span>
                 </p>
               </Col>
               <Col xs={12} md={7} className="project-img">
-                <img src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></img>
+                <img
+                  className="hover-effect"
+                  src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                ></img>
+                <NavLink
+                  className="overlay"
+                  to="https://bejewelled-alfajores-c72f6e.netlify.app/"
+                  target="_blank"
+                ></NavLink>
               </Col>
             </Row>
           </Container>
@@ -116,7 +123,7 @@ function Project() {
       {/* ------------------- */}
       {/* --- Project (2) --- */}
       {/* ------------------- */}
-      <TextEffect delay={0.5}>
+      <TextEffect delay={0.3}>
         <div className="project-container">
           <Container className="project">
             <Row>
@@ -163,12 +170,16 @@ function Project() {
                     <img src={jsIcon} className="project-icon"></img>
                     <img src={nodejsIcon} className="project-icon"></img>
                     <img src={dbIcon} className="project-icon"></img>
-                    {/* <img src={gitIcon} className="project-icon"></img> */}
                   </span>
                 </p>
               </Col>
               <Col xs={12} md={7} className="project-img">
                 <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></img>
+                <NavLink
+                  className="overlay"
+                  to="https://fitness-tracker.adaptable.app/"
+                  target="_blank"
+                ></NavLink>
               </Col>
             </Row>
           </Container>
@@ -178,7 +189,7 @@ function Project() {
       {/* ------------------- */}
       {/* --- Project (3) --- */}
       {/* ------------------- */}
-      <TextEffect delay={1}>
+      <TextEffect delay={0.3}>
         <div className="project-container">
           <Container className="project">
             <Row>
@@ -228,6 +239,11 @@ function Project() {
               </Col>
               <Col xs={12} md={7} className="project-img">
                 <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></img>
+                <NavLink
+                  className="overlay"
+                  to="https://gongtzuuuu.github.io/office-simulator/"
+                  target="_blank"
+                ></NavLink>
               </Col>
             </Row>
           </Container>

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 // Import components
@@ -13,29 +13,31 @@ function Banner() {
 
       <div className="banner-text">
         <TextEffect delay={0}>
-          <h3>Web developer based in Taiwan</h3>
+          <h3>Hello.</h3>
         </TextEffect>
         <TextEffect delay={0.3}>
           <p>
-            Currently work as an indepedant.Highly motivated and committed to
-            good working knowledge and the ability to learn new technology
-            quickly, with a background in project management that possesses a
-            high degree of problem-solving and teamwork skills.
+            I believe web development is a means of self-expression. It should
+            embody creativity and diversity, constantly pushing boundaries and
+            embracing every possibility. That's why I am relentless in my
+            pursuit of new techniques and ideas.
           </p>
-          {/* <HashLink smooth className="dark-button" to="/#about">
+          {/* <Link smooth className="dark-button" to="/portfolio">
             About me
-          </HashLink> */}
+          </Link> */}
         </TextEffect>
       </div>
       <TextEffect delay={0.6}>
         <div className="banner-header">
           <h5>TZU-YUN LIANG</h5>
           <div className="banner-header-text hide-mobile">
-            <p>
-              WEB DEVELOPER
-              <br />
-              PORTFOLIO 2022-2023
-            </p>
+            <NavLink to="/portfolio">
+              <p>
+                WEB DEVELOPER
+                <br />
+                PORTFOLIO 2022-2023
+              </p>
+            </NavLink>
           </div>
           <div className="banner-header-text hide-mobile">
             <p>

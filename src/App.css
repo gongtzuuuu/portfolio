@@ -101,9 +101,8 @@
 .banner-text {
   max-width: 300px;
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: 20%;
-
   text-align: left;
 }
 
@@ -153,9 +152,6 @@
   .banner-heroimage {
     max-width: 550px;
   }
-  .banner-text {
-    top: 40%;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -199,7 +195,7 @@
 }
 
 .about-profile {
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
 }
@@ -227,7 +223,7 @@
 .about-bio {
   display: flex;
   padding: 20px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   background-color: rgba(246, 246, 248, 0.3);
 }
 
@@ -483,7 +479,7 @@
 
 .portfolio-nav {
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 20px;
   z-index: 1;
 }
@@ -545,14 +541,29 @@
 }
 
 .project-img {
+  position: relative;
   overflow: hidden;
 }
 
 .project-img img {
   width: 100%;
-  object-fit: cover;
-  transform: scale(1.5);
-  transition-duration: 10s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in;
+  background-color: #f6f6f8;
+}
+
+.project-img:hover .overlay {
+  opacity: 0.3;
 }
 
 .project-icon {
