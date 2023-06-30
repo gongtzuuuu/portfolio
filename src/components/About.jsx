@@ -70,16 +70,21 @@ function About() {
             </TextEffect>
           </div>
         </div>
-        <div className="about-button">
-          <TextEffect delay={1.1}>
-            <NavLink className="light-button" to="/portfolio">
+
+        <TextEffect delay={1.1}>
+          <div className="about-button">
+            <NavLink className="light-button about-button-link" to="/portfolio">
               See my portfolio
             </NavLink>
-            <NavLink className="light-button" to="/portfolio">
+            <NavLink
+              className="light-button about-button-link"
+              to="https://drive.google.com/file/d/12oRetIKRQguKSOMrBFELBGkpL2yfuzJd/view?usp=drive_link"
+              target="_blank"
+            >
               Download my CV
             </NavLink>
-          </TextEffect>
-        </div>
+          </div>
+        </TextEffect>
       </div>
 
       <div className="about-backgroundimage">

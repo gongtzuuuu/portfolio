@@ -112,6 +112,12 @@ a:hover {
   border-radius: 100px;
 }
 
+@media screen and (max-width: 400px) {
+  .light-button {
+    margin: 0;
+  }
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
