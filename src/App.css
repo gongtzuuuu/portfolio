@@ -89,8 +89,8 @@
 
 .banner-heroimage {
   position: absolute;
-  top: 10%;
-  max-width: 600px;
+  top: 0;
+  max-width: 500px;
   overflow: hidden;
 }
 
@@ -148,9 +148,15 @@
   display: flex;
 }
 
+@media screen and (max-width: 1080px) {
+  .banner-heroimage {
+    max-width: 350px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .banner-heroimage {
-    max-width: 550px;
+    max-width: 300px;
   }
 }
 
@@ -402,7 +408,7 @@
   width: 100vw;
   height: 80vh;
   padding: 2rem;
-  background-image: url(https://images.unsplash.com/photo-1578165695722-7ddca71631f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+  background-image: url(./assets/photos/BOdwM5V0jU.jpg);
   background-size: 100%;
   background-attachment: cover;
   background-position: center;
@@ -417,24 +423,23 @@
   align-items: center;
 }
 
-.footer-decoration {
-  width: 100%;
-  padding: 20px;
-  position: absolute;
-  top: 20px;
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
+.footer-contact-form {
+  width: 400px;
+  margin: 20px;
 }
 
-.footer-contact-form {
-  width: 70%;
+.footer-link {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-link div {
+  margin: 20px;
 }
 
 .copyright {
   position: absolute;
   bottom: 5%;
-  font-size: 0.7rem;
 }
 
 /* ---------------------- */

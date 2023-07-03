@@ -3,12 +3,13 @@ import { HashLink } from "react-router-hash-link";
 
 // Import components
 import TextEffect from "./TextEffect";
+import backgroundImg from "../assets/photos/XCsWTMmliXg.jpg";
 
 function Banner() {
   return (
     <div className="banner" id="banner">
       <div className="banner-heroimage">
-        <img src="https://images.unsplash.com/photo-1592279485490-29d5e35cba3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></img>
+        <img src={backgroundImg}></img>
       </div>
 
       <div className="banner-text">
@@ -40,7 +41,7 @@ function Banner() {
             </NavLink>
           </div>
           <div className="banner-header-text hide-mobile">
-            <p>
+            <p className="disable-link">
               ART CREATOR
               <br />
               PORTFOLIO 2019-2020
@@ -60,14 +61,9 @@ function Banner() {
             </NavLink>
           </div>
         </TextEffect>
-        <TextEffect delay={1}>
-          <div className="banner-decoration-geo hide-mobile">
-            <p>N23.7058,E120.4154</p>
-          </div>
-        </TextEffect>
         <TextEffect delay={1.1}>
           <div className="banner-decoration-copyright">
-            <p>copyright ©TZU All Rights Reserved.</p>
+            <p>Designed and developed by TZU-YUN LIANG 2023</p>
           </div>
         </TextEffect>
       </div>

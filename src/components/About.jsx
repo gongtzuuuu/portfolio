@@ -5,6 +5,7 @@ import TextEffect from "./TextEffect";
 
 // Import picture resource
 import profileImage from "../assets/profile-pic.jpg";
+import backgroundImg from "../assets/photos/hf2lPpUU.jpg";
 
 function About() {
   return (
@@ -88,7 +89,7 @@ function About() {
       </div>
 
       <div className="about-backgroundimage">
-        <img src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"></img>
+        <img src={backgroundImg}></img>
       </div>
     </div>
   );
