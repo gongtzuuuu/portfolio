@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 
-// Import components
+//import components
 import TextEffect from "./TextEffect";
 
-// Import picture resource
+//import photos
 import profileImage from "../assets/profile-pic.jpg";
 import backgroundImg from "../assets/photos/hf2lPpUU.jpg";
 
@@ -21,10 +21,10 @@ function About() {
             </TextEffect>
             <TextEffect delay={0.3}>
               <h5>
-                I am a web developer based in Taipei, Taiwan, specializing in
-                crafting reliable and expandable web-based products that
-                prioritize user experiences. With expertise in web development,
-                I have successfully delivered a wide range of projects.
+                I am a career-changing web developer with a background in
+                project management and contemporary art . With expertise in web
+                development, I have successfully delivered a wide range of
+                web-based projects.
               </h5>
             </TextEffect>
           </div>
@@ -38,8 +38,8 @@ function About() {
             </TextEffect>
             <TextEffect delay={0.9}>
               <p className="job-description">
-                Excel at delivering accessible, fluid, and interactive websites,
-                having successfully collaborated with fellow developers on
+                Adept in delivering accessible, fluid, and interactive web-based
+                applications, having collaborated with fellow developers on
                 projects.
               </p>
             </TextEffect>
@@ -53,7 +53,7 @@ function About() {
             <TextEffect delay={0.9}>
               <p className="job-description">
                 Developed key project goals and worked collaboratively with
-                teams to achieve them in a timely and effective manner.
+                teams to achieve them effectively and within deadlines.
               </p>
             </TextEffect>
           </div>

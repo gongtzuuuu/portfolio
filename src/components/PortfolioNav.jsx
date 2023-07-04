@@ -5,7 +5,7 @@ function PortfolioNav() {
     <div className="portfolio-nav">
       <NavLink to="/">Back to HOME</NavLink>
       <NavLink
-        style={{ marginLeft: "10px" }}
+        style={{ marginLeft: "15px" }}
         to="https://drive.google.com/file/d/12oRetIKRQguKSOMrBFELBGkpL2yfuzJd/view?usp=drive_link"
         target="_blank"
       >

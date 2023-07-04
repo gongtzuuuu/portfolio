@@ -1,5 +1,3 @@
-//import { Button } from "react-bootstrap";
-//import { Link, NavLink } from "react-router-dom";
 import "../App.css";
 import BackToTopButton from "../components/BackToTopButton";
 import Banner from "../components/Banner";

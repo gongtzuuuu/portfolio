@@ -1,7 +1,9 @@
 import { useState, useRef } from "react";
+
+//import emailjs
 import emailjs from "@emailjs/browser";
 
-// Import componenets from bootstrap
+//import bootstrap components
 import { Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 
@@ -27,6 +29,7 @@ function Footer() {
           console.log(error.text);
         }
       );
+
     e.target.reset();
   };
 
@@ -34,7 +37,7 @@ function Footer() {
     <div className="footer" id="footer">
       <div className="footer-container">
         <div className="footer-contact-form">
-          <h3 style={{ marginBottom: "20px" }}>Contact me :)</h3>
+          <h3 style={{ marginBottom: "20px" }}>Contact me!</h3>
           <Form ref={form} onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="form.Control.name">
               <Form.Control
@@ -70,9 +73,9 @@ function Footer() {
       </div>
       <p className="copyright">
         Icons by creators on flaticon and iconmonstr.<br></br>Photos by David
-        Brooke Martin, kasra fayyazi, Annie Spratt, José Ignacio, Victor
-        Freitas, Mario Gogh, Z on Unsplash.<br></br>Designed and developed by
-        TZU-YUN LIANG 2023
+        Brooke Martin, Luca, Annie Spratt, José Ignacio, Victor Freitas, Mario
+        Gogh, Z on Unsplash.<br></br>Designed and developed by TZU-YUN LIANG
+        2023
       </p>
     </div>
   );

@@ -3,9 +3,6 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 function Marquee() {
   const { scrollY } = useScroll();
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [isScrollDown, setIsScrollDown] = useState(true);
-
   const [marqueePosition, setMarqueePosition] = useState(0);
 
   useMotionValueEvent(scrollY, "change", (latest) => {

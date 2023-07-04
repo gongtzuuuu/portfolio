@@ -1,7 +1,7 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-// Import components
+//import components
 import TextEffect from "./TextEffect";
 import backgroundImg from "../assets/photos/XCsWTMmliXg.jpg";
 
@@ -49,7 +49,6 @@ function Banner() {
           </div>
         </div>
       </TextEffect>
-
       <div className="banner-decoration">
         <TextEffect delay={0.9}>
           <div className="banner-decoration-link">

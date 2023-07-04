@@ -1,15 +1,12 @@
 //import framer motion
-import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 //import react bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-// import icons
+//import icons
 import linkIcon from "../assets/share.png";
 import htmlIcon from "../assets/icons/html5.svg";
 import cssIcon from "../assets/icons/css3-alt.svg";
@@ -19,25 +16,15 @@ import nodejsIcon from "../assets/icons/node.svg";
 import dbIcon from "../assets/icons/mongodb.png";
 import gitIcon from "../assets/icons/git-alt.svg";
 
-// Import components
+//import components
 import TextEffect from "./TextEffect";
 
-//for the div variants
-const divVariants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
-  hidden: { opacity: 0, scale: 0 },
-};
+//import photos
+import mapImg from "../assets/photos/TrhLCn1abMU.jpg";
+import exerciseImg from "../assets/photos/WvDYdXDzkhs.jpg";
+import officeImg from "../assets/photos/VBLHICVh.jpg";
 
 function Project() {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-
   return (
     <div>
       {/* ------------------- */}
@@ -105,10 +92,7 @@ function Project() {
                 </p>
               </Col>
               <Col xs={12} md={7} className="project-img">
-                <img
-                  className="hover-effect"
-                  src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                ></img>
+                <img className="hover-effect" src={mapImg}></img>
                 <NavLink
                   className="overlay"
                   to="https://bejewelled-alfajores-c72f6e.netlify.app/"
@@ -174,7 +158,7 @@ function Project() {
                 </p>
               </Col>
               <Col xs={12} md={7} className="project-img">
-                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></img>
+                <img src={exerciseImg}></img>
                 <NavLink
                   className="overlay"
                   to="https://fitness-tracker.adaptable.app/"
@@ -238,7 +222,7 @@ function Project() {
                 </p>
               </Col>
               <Col xs={12} md={7} className="project-img">
-                <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></img>
+                <img src={officeImg}></img>
                 <NavLink
                   className="overlay"
                   to="https://gongtzuuuu.github.io/office-simulator/"
