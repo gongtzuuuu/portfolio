@@ -36,7 +36,7 @@ function Banner() {
               <p>
                 WEB DEVELOPER
                 <br />
-                PORTFOLIO 2022-2023
+                PORTFOLIO 2023
               </p>
             </NavLink>
           </div>
