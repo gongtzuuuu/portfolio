@@ -21,10 +21,10 @@ function About() {
             </TextEffect>
             <TextEffect delay={0.3}>
               <h5>
-                I am a career-changing web developer with a background in
-                project management and contemporary art . With enthusiasm, I am
-                actively seeking employment opportunities that will allow me to
-                make the best use of my skills and further develop them.
+                I am a junior web developer with a background in project
+                management and art . With enthusiasm, I am actively seeking
+                employment opportunities that will allow me to make the best use
+                of my skills and further develop them.
               </h5>
             </TextEffect>
           </div>
