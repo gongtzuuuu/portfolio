@@ -58,11 +58,14 @@ function Banner() {
             <NavLink to="https://www.linkedin.com/in/tyliang/" target="_blank">
               <p>LINKEDIN</p>
             </NavLink>
+            <NavLink to="https://medium.com/@gongtzuuuu" target="_blank">
+              <p>MEDIUM</p>
+            </NavLink>
           </div>
         </TextEffect>
         <TextEffect delay={1.1}>
           <div className="banner-decoration-copyright">
-            <p>Designed and developed by TZU-YUN LIANG 2023</p>
+            <p>©2023 TZU-YUN LIANG</p>
           </div>
         </TextEffect>
       </div>

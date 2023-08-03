@@ -13,7 +13,7 @@ function Marquee() {
     <div className="marquee">
       <motion.h1
         className="marquee-title"
-        animate={{ x: marqueePosition - 2000 }}
+        animate={{ x: marqueePosition - 1800 }}
         initial={{ x: 0 }}
         transition={{ ease: "easeOut", duration: 3 }}
       >
@@ -21,7 +21,7 @@ function Marquee() {
       </motion.h1>
       <motion.h1
         className="marquee-title"
-        animate={{ x: 1000 - marqueePosition }}
+        animate={{ x: 1200 - marqueePosition }}
         initial={{ x: 1000 }}
         transition={{ ease: "easeOut", duration: 3 }}
       >

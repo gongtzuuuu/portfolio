@@ -71,12 +71,7 @@ function Footer() {
           {isSendEmail ? <p>Message successfully sent!</p> : ""}
         </div>
       </div>
-      <p className="copyright">
-        Icons by creators on flaticon and iconmonstr.<br></br>Photos by David
-        Brooke Martin, Luca, Annie Spratt, José Ignacio, Victor Freitas, Mario
-        Gogh, Z on Unsplash.<br></br>Designed and developed by TZU-YUN LIANG
-        2023
-      </p>
+      <p className="copyright">©2023 TZU-YUN LIANG</p>
     </div>
   );
 }

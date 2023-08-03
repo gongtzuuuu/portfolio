@@ -15,21 +15,88 @@ import reactIcon from "../assets/icons/react.svg";
 import nodejsIcon from "../assets/icons/node.svg";
 import dbIcon from "../assets/icons/mongodb.png";
 import gitIcon from "../assets/icons/git-alt.svg";
+import nextIcon from "../assets/icons/nextjs.svg";
+import tailwindIcon from "../assets/icons/tailwindcss.svg";
 
 //import components
 import TextEffect from "./TextEffect";
 
 //import photos
-import mapImg from "../assets/photos/TrhLCn1abMU.jpg";
-import exerciseImg from "../assets/photos/WvDYdXDzkhs.jpg";
-import officeImg from "../assets/photos/VBLHICVh.jpg";
+import songImg from "../assets/photos/song.jpeg";
+import mapImg from "../assets/photos/map.jpeg";
+import exerciseImg from "../assets/photos/workout.jpeg";
+import officeImg from "../assets/photos/office.jpeg";
 
 function Project() {
   return (
     <div>
-      {/* ------------------- */}
-      {/* --- Project (1) --- */}
-      {/* ------------------- */}
+      {/* ----------------- */}
+      {/* --- meloverse --- */}
+      {/* ----------------- */}
+      <TextEffect delay={0.3}>
+        <div className="project-container">
+          <Container className="project">
+            <Row>
+              <Col xs={12} md={5} className="project-text">
+                <h3 className="project-title">meloverse</h3>
+                <hr style={{ border: "#937829 0.5px solid" }}></hr>
+                <div>
+                  <NavLink
+                    className="project-link"
+                    to="https://meloverse-gongtzuuuu.vercel.app"
+                    target="_blank"
+                  >
+                    <img src={linkIcon} className="project-link-icon" />
+                    <p className="project-link-text">Deploy version</p>
+                  </NavLink>
+                  <NavLink
+                    className="project-link"
+                    to="https://github.com/gongtzuuuu/meloverse"
+                    target="_blank"
+                  >
+                    <img src={linkIcon} className="project-link-icon" />
+                    <p className="project-link-text">Github link</p>
+                  </NavLink>
+                </div>
+                <hr style={{ border: "#937829 0.5px solid" }}></hr>
+                <p>
+                  meloverse is an innovative music app that enables users to
+                  craft engaging posts with their favorite songs. Users can
+                  seamlessly log in with Spotify account to access their
+                  personal collection or explore new tracks by keywords or
+                  artists. The app also introduce a thriving community of music
+                  enthusiasts, where users share their love for songs and
+                  discover a harmonious array of posts. Filter content by tags
+                  to explore topics of your interest, connecting with
+                  like-minded individuals.
+                </p>
+                <hr style={{ border: "#937829 0.5px solid" }}></hr>
+                <p>
+                  Tech stack:
+                  <span>
+                    <img src={nextIcon} className="project-icon"></img>
+                    <img src={reactIcon} className="project-icon"></img>
+                    <img src={jsIcon} className="project-icon"></img>
+                    <img src={dbIcon} className="project-icon"></img>
+                    <img src={tailwindIcon} className="project-icon"></img>
+                  </span>
+                </p>
+              </Col>
+              <Col xs={12} md={7} className="project-img">
+                <img className="hover-effect" src={songImg}></img>
+                <NavLink
+                  className="overlay"
+                  to="https://meloverse-gongtzuuuu.vercel.app"
+                  target="_blank"
+                ></NavLink>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </TextEffect>
+      {/* -------------------- */}
+      {/* --- GluttonGlobe --- */}
+      {/* -------------------- */}
       <TextEffect delay={0.3}>
         <div className="project-container">
           <Container className="project">
@@ -82,12 +149,11 @@ function Project() {
                 <p>
                   Tech stack:
                   <span>
-                    <img src={htmlIcon} className="project-icon"></img>
-                    <img src={cssIcon} className="project-icon"></img>
-                    <img src={jsIcon} className="project-icon"></img>
                     <img src={reactIcon} className="project-icon"></img>
                     <img src={nodejsIcon} className="project-icon"></img>
+                    <img src={jsIcon} className="project-icon"></img>
                     <img src={dbIcon} className="project-icon"></img>
+                    <img src={cssIcon} className="project-icon"></img>
                   </span>
                 </p>
               </Col>
@@ -104,9 +170,9 @@ function Project() {
         </div>
       </TextEffect>
 
-      {/* ------------------- */}
-      {/* --- Project (2) --- */}
-      {/* ------------------- */}
+      {/* ---------------- */}
+      {/* --- FitQuest --- */}
+      {/* ---------------- */}
       <TextEffect delay={0.3}>
         <div className="project-container">
           <Container className="project">
@@ -170,9 +236,9 @@ function Project() {
         </div>
       </TextEffect>
 
-      {/* ------------------- */}
-      {/* --- Project (3) --- */}
-      {/* ------------------- */}
+      {/* ------------------------ */}
+      {/* --- Office Simulator --- */}
+      {/* ------------------------ */}
       <TextEffect delay={0.3}>
         <div className="project-container">
           <Container className="project">
