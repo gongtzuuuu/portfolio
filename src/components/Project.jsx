@@ -43,7 +43,7 @@ function Project() {
                 <div>
                   <NavLink
                     className="project-link"
-                    to="https://meloverse-gongtzuuuu.vercel.app"
+                    to="https://meloverse.vercel.app"
                     target="_blank"
                   >
                     <img src={linkIcon} className="project-link-icon" />
@@ -86,7 +86,7 @@ function Project() {
                 <img className="hover-effect" src={songImg}></img>
                 <NavLink
                   className="overlay"
-                  to="https://meloverse-gongtzuuuu.vercel.app"
+                  to="https://meloverse.vercel.app"
                   target="_blank"
                 ></NavLink>
               </Col>
