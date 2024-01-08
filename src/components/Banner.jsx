@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 //import components
-import TextEffect from "./TextEffect";
-import backgroundImg from "../assets/photos/XCsWTMmliXg.jpg";
+import TextEffect from './TextEffect';
+import backgroundImg from '../assets/photos/XCsWTMmliXg.jpg';
 
 function Banner() {
   return (
@@ -58,7 +58,7 @@ function Banner() {
             <NavLink to="https://www.linkedin.com/in/tyliang/" target="_blank">
               <p>LINKEDIN</p>
             </NavLink>
-            <NavLink to="https://medium.com/@gongtzuuuu" target="_blank">
+            <NavLink to="https://medium.com/@tyliang" target="_blank">
               <p>MEDIUM</p>
             </NavLink>
           </div>
